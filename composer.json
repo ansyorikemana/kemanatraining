@@ -1,29 +1,29 @@
-{
-    "name": "kemana/kemanatraining",
-    "type": "library",
-    "description": "Kemana Extension : Kemana Training Modules",
-	"version": "3.0.0-stable",
-	"license": "Apache-2.0",
-	 "minimum-stability": "stable",
-	 "authors": [
-		{
-		  "name": "Ansyori B",
-		  "email": "ansyori@kemana.com"
-		}
-	  ],
-	  "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/ansyorikemana/kemanatraining"
-        }
-    
-    ],
-  "extra": {
-    "extra": {
-        "map": [
-            ["app/code/", ""]
-          
-        ]
-    }
-  }  
+{  
+   "name":"kemana/kemanatraining",
+   "type":"library",
+   "description":"Kemana Extension : Kemana Training Modules",
+   "version":"3.0.0-stable",
+   "license":"Apache-2.0",
+   "minimum-stability":"stable",
+   "authors":[  
+      {  
+         "name":"Ansyori B",
+         "email":"ansyori@kemana.com"
+      }
+   ],
+   "repositories":[  
+      {  
+         "type":"vcs",
+         "url":"https://github.com/ansyorikemana/kemanatraining"
+      }
+   ],
+   "extra":{  
+      "extra":{  
+         "map":[  
+            [  
+               "app/code/","app/code"
+            ]
+         ]
+      }
+   }
 }
