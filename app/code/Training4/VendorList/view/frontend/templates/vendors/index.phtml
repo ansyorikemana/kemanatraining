@@ -1,0 +1,46 @@
+<!-- 
+/**
+ * Copyright © 2017 PT Kemana Teknologi Solusi. All rights reserved.
+ * http://www.kemana.com
+ */
+
+/**
+ * @category Training4
+ * @package  Training4_VendorList
+ * @license  http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)  
+ *
+ *
+ * @author   Kemana Team
+ *
+ */
+-->
+
+<h1><?php echo __('Vendors List : ') ?></h1>
+<?php  $vendorsList = $block->getVendorList() ?>
+
+
+<ul>
+        <?php foreach ($vendorsList as $ven) : ?>
+    <li><h3><a href="<?php echo $block->getUrl('*/*/view', array('vendor_id'=>$ven->getId())) ?>">
+    <?php echo $ven->getVendorName() ?></a></h3></li>
+    <?php endforeach ?>
+</ul>
+
+<a href="<?php echo $block->getUrl('*/*/*', array('sort'=>'asc')) ?>"><?php echo __('Sort Vendors Name ASC') ?></a> | 
+<a href="<?php echo $block->getUrl('*/*/*', array('sort'=>'desc')) ?>"><?php echo __('Sort Vendors Name DESC') ?></a>
+
+<div class="field "></div>
+
+<form action="<?php echo $block->getCurrentUrl() ?>" method="get" id="find-vendor">
+    <div class="field ">
+                <label class="label" for="keyword"><span><?php echo __('Search Vendors') ?>:</span></label>
+                <div class="control">
+                    <input name="keyword" type="text" id="keyword" placeholder="Search vendor name" />
+                </div>
+</div>
+            <div class="actions">
+                <button class="action subscribe primary" title="Subscribe" type="submit">
+                    <span><?php echo __('Search') ?></span>
+                </button>
+            </div>
+</form>

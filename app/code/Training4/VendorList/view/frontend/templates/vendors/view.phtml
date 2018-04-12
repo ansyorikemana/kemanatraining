@@ -1,0 +1,28 @@
+<?php
+/**
+ * Copyright © 2017 PT Kemana Teknologi Solusi. All rights reserved.
+ * http://www.kemana.com
+ */
+
+/**
+ * @category Training4
+ * @package  Training4_VendorList
+ * @license  http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ *
+ *
+ * @author   Kemana Team
+ *
+ */
+
+$vendorData = $block->getVendorData();
+$vendorProducts =  $block->getProductVendors();
+?>
+<h1><?php echo __('Vendor Name : %1', $vendorData->getVendorName()) ?></h1>
+<ul>
+<?php foreach ($vendorProducts as $product) :
+        $_product =  $block->getProductData($product['product_id']); ?>
+        <li><b><a target='_blank' href="<?php echo $_product->getProductUrl()  ?>">
+        <?php echo $_product->getName() ?>
+        </a></b></li>
+<?php endforeach ?>
+</ul>

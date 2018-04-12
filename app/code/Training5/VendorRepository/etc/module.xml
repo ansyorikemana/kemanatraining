@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!-- 
+/**
+ * Copyright © 2017 PT Kemana Teknologi Solusi. All rights reserved.
+ * http://www.kemana.com
+ */
+
+/**
+ * @category Training5
+ * @package  Training5_VendorRepository
+ * @license  http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ *
+ *
+ * @author   Kemana Team
+ *
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+	<module name="Training5_VendorRepository" setup_version="1.0.0"/>
+</config>

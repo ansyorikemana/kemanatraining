@@ -1,0 +1,21 @@
+{
+    "name": "training5/module-vendorapi",
+    "description": "Make the Vendor repository available through REST and SOAP",
+   "license": "Kemana License",
+    "authors": [
+        {
+            "name": "Ansyori",
+            "email": "ansyori@kemana.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Training5\\VendorApi\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

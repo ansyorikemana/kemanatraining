@@ -1,0 +1,21 @@
+{
+    "name": "training3/module-exchangerate",
+    "description": "Add a block that shows the current exchange rate between the euro and the US dollar on every page. Use this URL for obtaining current rates: http://api.fixer.io/latest?base=USD",
+    "license": "Kemana License",
+    "authors": [
+        {
+            "name": "Ansyori",
+            "email": "ansyori@kemana.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Training3\\ExchangeRate\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

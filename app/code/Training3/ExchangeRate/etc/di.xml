@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2017 PT Kemana Teknologi Solusi. All rights reserved.
+ * http://www.kemana.com
+ */
+
+/**
+ * @category Training3
+ * @package  Training3_ExchangeRate
+ * @license  http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)  
+ *
+ * 
+ * @author   Kemana Team
+ *
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="\Magento\Framework\HTTP\ClientInterface" type="\Magento\Framework\HTTP\Client\Curl"/>
+    <preference for="Training3\ExchangeRate\Api\ExchangeRateInterface" type="\Training3\ExchangeRate\Model\ExchangeRates"/>
+    <type name="\Training3\ExchangeRate\Model\ExchangeRates">
+        <arguments>
+            <argument name="baseCurrency" xsi:type="string">USD</argument>
+        </arguments>
+    </type>
+</config>

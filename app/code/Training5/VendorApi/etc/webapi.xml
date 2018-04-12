@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Copyright © 2017 PT Kemana Teknologi Solusi. All rights reserved.
+ * http://www.kemana.com
+ */
+
+/**
+ * @category Training5
+ * @package  Training5_VendorApi
+ * @license  http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)  
+ *
+ *
+ * @author   Kemana Team
+ *
+ */
+ -->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/vendors/getlist" method="GET">
+        <service class="Training5\VendorApi\Api\VendorApiInterface" method="getList"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <route url="/V1/vendors/load/:vendorId" method="GET">
+        <service class="Training5\VendorApi\Api\VendorApiInterface" method="load"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <route url="/V1/vendors/save/:vendorName" method="GET">
+        <service class="Training5\VendorApi\Api\VendorApiInterface" method="save"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <route url="/V1/vendors/getassoc/:vendorId" method="GET">
+        <service class="Training5\VendorApi\Api\VendorApiInterface" method="getAssociatedProductIds"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route> 
+	
+	
+</routes>

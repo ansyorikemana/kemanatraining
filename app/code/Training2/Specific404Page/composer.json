@@ -1,0 +1,21 @@
+{
+    "name": "training2/module-specific404page",
+    "description": "Show different 404 pages for the following  ? A not-found product (catalog/product/view/id/_ID_) ? A category (catalog/category/view/id/_ID_) ? Another page",
+    "license": "Kemana License",
+    "authors": [
+        {
+            "name": "Ansyori",
+            "email": "ansyori@kemana.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Training2\\Specific404Page\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

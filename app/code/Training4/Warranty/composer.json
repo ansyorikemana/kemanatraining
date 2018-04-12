@@ -1,0 +1,21 @@
+{
+    "name": "training4/module-warranty",
+    "description": "Add a new attribute to the product (warranty, type text). Make it visible on the product view page. Implement a backend model that changes values such as \u201c1\u201d to \u201c1 year\u201d. Implement a frontend model that makes it bold. Assign the attribute to the Gear attribute set (from the install/upgrade script)",
+    "license": "Kemana License",
+    "authors": [
+        {
+            "name": "Ansyori",
+            "email": "ansyori@kemana.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Training4\\Warranty\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

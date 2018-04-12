@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Copyright © 2017 PT Kemana Teknologi Solusi. All rights reserved.
+ * http://www.kemana.com
+ */
+
+/**
+ * @category Training1
+ * @package  Training1_Review
+ * @license  http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)  
+ *
+ * 
+ * @author   Kemana Team
+ *
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<type name="Magento\Review\Model\Review">
+		<plugin disabled="false" name="Training1_Review_Plugin_Magento_Review_Model_Review" sortOrder="2" type="Training1\Review\Plugin\Magento\Review\Model\Review"/>
+	</type>
+</config>

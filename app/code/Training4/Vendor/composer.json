@@ -1,0 +1,21 @@
+{
+    "name": "training4/module-vendor",
+    "description": "Create a new entity for vendor. Create a new table (training4_vendor, with two fields for vendor_id, name), and create a data install/upgrade script to connect vendors with products (training4_vendor2product, using many-to-many connections). On the product view page, show a block with a list of assigned vendors",
+    "license": "Kemana License",
+    "authors": [
+        {
+            "name": "Ansyori",
+            "email": "ansyori@kemana.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Training4\\Vendor\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

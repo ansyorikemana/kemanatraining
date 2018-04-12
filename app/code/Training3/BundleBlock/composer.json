@@ -1,0 +1,21 @@
+{
+    "name": "training3/module-bundleblock",
+    "description": "Add a hello world block on the bundle product pages.",
+    "license": "Kemana License",
+    "authors": [
+        {
+            "name": "Ansyori",
+            "email": "ansyori@kemana.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Training3\\BundleBlock\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

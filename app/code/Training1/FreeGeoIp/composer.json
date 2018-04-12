@@ -1,0 +1,22 @@
+{
+    "name": "training1/module-freegeoip",
+    "description": "Create an extension that defines the visitor country by making a remote call to the freegeoip.net/json/_IP_",
+    "license": "Kemana License",
+    "authors": [
+        {
+            "name": "Ansyori",
+            "email": "ansyori@kemana.com"
+        }
+    ],
+    "minimum-stability": "dev",
+	"version": "1.0.0",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Training1\\FreeGeoIp\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

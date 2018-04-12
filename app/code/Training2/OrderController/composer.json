@@ -1,0 +1,21 @@
+{
+    "name": "training2/module-ordercontroller",
+    "description": "Create a new controller that takes orderID as a parameter and returns a json with information about order status, total, items (sku, item_id, price) and total invoiced",
+    "license": "Kemana License",
+    "authors": [
+        {
+            "name": "Ansyori",
+            "email": "ansyori@kemana.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Training2\\OrderController\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

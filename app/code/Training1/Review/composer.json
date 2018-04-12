@@ -1,0 +1,21 @@
+{
+    "name": "training1/module-review",
+    "description": "When submitting a review on the product view page, make sure that the username does not contain dashes. If it does, show an error message. (Training1_Review)",
+    "license": "Kemana License",
+    "authors": [
+        {
+            "name": "Ansyori",
+            "email": "ansyori@kemana.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Training1\\Review\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

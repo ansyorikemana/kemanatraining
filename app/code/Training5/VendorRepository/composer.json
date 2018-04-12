@@ -1,0 +1,21 @@
+{
+    "name": "training5/module-vendorrepository",
+    "description": "Create a repository for the vendor entity. Create the following operations : load , save , getList & getAssociatedProductcIds",
+     "license": "Kemana License",
+    "authors": [
+        {
+            "name": "Ansyori",
+            "email": "ansyori@kemana.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Training5\\VendorRepository\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
