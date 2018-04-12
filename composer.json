@@ -19,8 +19,11 @@
     
     ],
   "extra": {
-    "installer-paths": {
-      "app/code/": ["kemana/kemanatraining"]    
+    "extra": {
+        "map": [
+            ["app/code/", ""]
+          
+        ]
     }
   }  
 }
