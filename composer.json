@@ -16,8 +16,8 @@
             "type": "vcs",
             "url": "https://github.com/ansyorikemana/kemanatraining"
         }
-    ]
-  },
+    
+    ],
    "autoload": {
         "psr-0" : {
           "app/code" : "app/code"
