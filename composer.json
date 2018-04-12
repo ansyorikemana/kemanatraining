@@ -18,9 +18,9 @@
         }
     
     ],
-   "autoload": {
-        "psr-0" : {
-          "app/code" : "app/code"
-        }
+  "extra": {
+    "installer-paths": {
+      "app/code/": ["kemana/kemanatraining"]    
     }
+  }  
 }
